@@ -28,6 +28,7 @@ function calcularDesconto(salario){
     }
 }
 
-const salarioFinal = salarioBruto - (calcularPercentual(salarioBruto, calcularDesconto(salarioBruto))) + beneficios
+const valorImposto = calcularPercentual(salarioBruto, calcularDesconto(salarioBruto))
+const salarioFinal = (salarioBruto - valorImposto) + beneficios
 
 print(salarioFinal)
