@@ -77,10 +77,10 @@
 }
 
 .pokemon .number{
-    color: #14A06F;
+    color: #1a1a1a;
     text-align: right;
     font-size: 0.625rem;
-    opacity: 0.9;
+    opacity: 0.6;
 }
 
 .pokemon .detail{
