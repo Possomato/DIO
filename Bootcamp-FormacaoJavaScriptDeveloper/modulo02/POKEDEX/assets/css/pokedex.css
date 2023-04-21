@@ -76,6 +76,10 @@
     flex-direction: column;
 }
 
+.pokemon .name{
+    text-transform: capitalize;
+}
+
 .pokemon .number{
     color: #1a1a1a;
     text-align: right;
@@ -106,6 +110,29 @@
     border-radius: 1rem;
     text-align: center;
     filter: brightness(1.1);
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: itens;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button{
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+}
+
+.pagination button:hover{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (min-width: 380px){
