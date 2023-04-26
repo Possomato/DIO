@@ -5,28 +5,36 @@
 */
 
 
-function verificar(num1, num2){
-    let igualdade, dez, vinte;
+// function verificar(num1, num2){
+//     let igualdade, dez, vinte;
 
-    if (num1 === num2){
-        igualdade = 'são iguais'
-    } else{
-        igualdade = 'não são iguais'
-    }
+//     if (num1 === num2){
+//         igualdade = 'são iguais'
+//     } else{
+//         igualdade = 'não são iguais'
+//     }
 
-    if (num1 + num2 > 10){
-        dez = 'maior'
-    } else{
-        dez = 'menor'
-    }
+//     if (num1 + num2 > 10){
+//         dez = 'maior'
+//     } else{
+//         dez = 'menor'
+//     }
 
-    if (num1 + num2 < 20){
-        vinte = 'menor'
-    } else{
-        vinte = 'maior'
-    }
+//     if (num1 + num2 < 20){
+//         vinte = 'menor'
+//     } else{
+//         vinte = 'maior'
+//     }
 
-    console.log(`Os números ${num1} e ${num2} ${igualdade}. Sua soma é ${num1 + num2}, que é ${dez} que 10 e ${vinte} que 20.`)
+//     console.log(`Os números ${num1} e ${num2} ${igualdade}. Sua soma é ${num1 + num2}, que é ${dez} que 10 e ${vinte} que 20.`)
+// }
+
+// verificar(1, 2)
+
+function validaNumero(num){
+    if (!num) return ('Envie um número válido!')
+  
+    return num;
 }
 
-verificar(1, 2)
+validaNumero();
