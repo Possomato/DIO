@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01</title>
+</head>
+<body>
+    <h1>Desafio - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#surgimento">Surgimento do HTML</a></li>
+        <li><a href="#estrutura">Estrutura básica de um HTML</a></li>
+        <li><a href="#principais">Principais tags</a></li>
+        <li><a href="#semantica">Importância da semântica</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+    <h2 id="surgimen">Surgimento do HTML</h2>
+    <p>O HTML, ou <i>HyperText Markup Language</i> (Linguagem de Marcação de Hipertexto), é uma linguagem fundamental para a criação de páginas da web. Ele foi desenvolvido por Tim Berners-Lee no início dos anos 1990 como parte do projeto World Wide Web (WWW). O objetivo era permitir a criação de documentos interconectados por meio de links, formando uma teia de informações.</p>
+    <p>Ao longo dos anos, o HTML evoluiu e novas versões foram lançadas, adicionando recursos e funcionalidades. Hoje, o HTML continua sendo uma parte essencial do desenvolvimento web, permitindo que os desenvolvedores estruturem o conteúdo de suas páginas de forma eficiente.</p>
+
+    <h2 id="estrutura">Estrutura básica de um HTML</h2>
+    <p>A estrutura básica do HTML é a base fundamental para a criação de páginas da web. HTML significa HyperText Markup Language (Linguagem de Marcação de Hipertexto) e é uma linguagem de marcação usada para estruturar o conteúdo de um documento na web.</p>
+    <p>Um documento HTML consiste em uma série de elementos que são marcados usando tags. Cada tag tem uma função específica e define como o conteúdo deve ser exibido no navegador. A estrutura básica de um documento HTML segue o seguinte formato:</p>
+    <pre>
+    <code>
+    &lt;!DOCTYPE html&gt; 
+    &lt;html&gt; 
+    &lt;head&gt;
+        &lt;title>Título da Página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1>Título Principal&lt;/h1&gt;
+        &lt;p>Parágrafo de texto.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+    </pre>
+    <p>Vamos analisar cada parte da estrutura:</p>
+    <ol>
+        <li><strong>&lt;!DOCTYPE html&gt;</strong>: Esta declaração define o tipo de documento como HTML5, que é a versão mais recente do HTML.</li>
+        <li><strong>&lt;html&gt;</strong>: é o elemento raiz de um documento HTML e contém todos os outros elementos.</li>
+        <li><strong>&lt;head&gt;</strong>: é o elemento raiz de um documento HTML e contém todos os outros elementos.</li>
+        <li><strong>&lt;title&gt;</strong>: define o título da página, que é exibido na barra de título do navegador ou na guia.</li>
+        <li><strong>&lt;body&gt;</strong>: contém todo o conteúdo visível da página, como texto, imagens, links e outros elementos HTML.</li>
+    </ol>
+    <p>Esses são apenas alguns exemplos da estrutura básica do HTML e das possibilidades de formatação. O HTML oferece uma ampla gama de tags e atributos para criar páginas da web ricas e interativas.</p>
+
+    <h2 id="principais">Principais tags</h2>
+    <p>O HTML é composto por várias tags que desempenham diferentes funções na estruturação e formatação de páginas da web. Aqui está um resumo das principais tags do HTML:</p>
+    <ul>
+        <li><mark>&lt;h1&gt;</mark> a <mark>&lt;h6&gt;</mark>:  Definem títulos de diferentes níveis de importância, sendo &lt;h1&gt; o mais importante e &lt;h6&gt; o menos importante.</li>
+        <li><mark>&lt;p&gt;</mark>: Cria um parágrafo de texto.</li>
+        <li><mark>&lt;a&gt;</mark>: Define um link para outra página ou recurso na web.</li>
+        <li><mark>&lt;img&gt;</mark>: Insere uma imagem na página.</li>
+        <li><mark>&lt;ul&gt;</mark>: Cria uma lista não ordenada.</li>
+        <li><mark>&lt;ol&gt;</mark>: Cria uma lista ordenada.</li>
+        <li><mark>&lt;li&gt;</mark>: Define um item de lista, usado em conjunto com as tags &lt;ul&gt; ou &lt;li&gt;</li>
+        <li><mark>&lt;div&gt;</mark>: Define um bloco genérico para agrupar outros elementos.</li>
+        <li><mark>&lt;span&gt;</mark>: Define uma área de texto ou conteúdo inline.</li>
+    </ul>
+
+    <h2 id="semantica">Importância da semântica</i>?</h2>
+    <p>A importância da semântica no HTML reside na capacidade de atribuir significado e estrutura ao conteúdo de uma página da web. Ao utilizar tags semânticas adequadas, os desenvolvedores podem fornecer informações claras sobre o tipo de conteúdo presente em cada elemento, melhorando a acessibilidade, a indexação pelos mecanismos de busca e a compreensão do conteúdo pelos usuários.</p>
+    <p>As tags semânticas, como <i>&lt;header&gt;</i>, <i>&lt;nav&gt;</i>, <i>&lt;main&gt;</i>, <i>&lt;section&gt;</i>, <i>&lt;article&gt;</i>, <i>&lt;footer&gt;</i> e outras, têm um propósito específico e descrevem claramente a função e a estrutura do conteúdo que envolvem. Isso ajuda a organizar a página de forma lógica e coerente, permitindo que os mecanismos de busca entendam melhor o contexto do conteúdo e melhorem sua classificação nos resultados de pesquisa.</p>
+    <p>Além disso, a semântica aprimora a acessibilidade para pessoas com deficiências visuais ou que utilizam tecnologias assistivas. Ao usar tags semânticas apropriadas, como <i>&lt;nav&gt;</i> para a navegação principal ou <i>&lt;h1&gt;</i> a <i>&lt;h6&gt;</i> para títulos, as informações estruturais são transmitidas de maneira clara aos leitores de tela, facilitando a compreensão e a navegação do conteúdo.</p>
+    <p>A semântica também contribui para uma melhor manutenção do código. Com uma estrutura semântica bem definida, o código HTML se torna mais legível e organizado, facilitando a compreensão e a colaboração entre os membros da equipe de desenvolvimento. Além disso, ao separar a estrutura do conteúdo da apresentação visual, é mais fácil aplicar estilos CSS e realizar alterações futuras sem afetar a estrutura do documento.</p>
+    <p>Em resumo, o uso de tags semânticas no HTML é fundamental para atribuir significado e estrutura ao conteúdo da página. Isso resulta em melhores práticas de acessibilidade, otimização para mecanismos de busca e manutenção do código, fornecendo uma experiência de usuário mais rica e eficiente.</p>
+
+    <h2 id="links">Links de referências</h2>
+    <ul>
+        <li><a href="http://dio.me" target="_blank">http://dio.me</a></li>
+        <li><a href="http://w3c.org" target="_blank">http://w3c.org</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element</a></li>
+        <li><a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos" target="_blank">https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos</a></li>
+        <li><a href="https://www.freecodecamp.org/portuguese/news/manual-de-html-aprendizagem-de-html-para-iniciantes/" target="_blank">https://www.freecodecamp.org/portuguese/news/manual-de-html-aprendizagem-de-html-para-iniciantes/</a></li>
+    </ul>
+</body>
+</html>
