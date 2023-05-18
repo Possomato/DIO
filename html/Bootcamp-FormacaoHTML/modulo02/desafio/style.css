@@ -46,7 +46,7 @@ header {
 
 #content{
     background-color: whitesmoke;
-    height: 75vh;
+    height: 80vh;
     text-align: justify;
     padding: 20px;
 }
@@ -57,6 +57,9 @@ header {
 }
 
 footer{
-    background-color: orangered;
-    height: 10vh;
+    background-color: rgb(36, 36, 36);
+    color: whitesmoke;
+    height: 5vh;
+    text-align: center;
+    padding: 5px;
 }
