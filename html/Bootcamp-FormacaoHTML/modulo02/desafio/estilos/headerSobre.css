@@ -1,0 +1,7 @@
+header {
+    height: 15vh;
+    background-image: url('/html/Bootcamp-FormacaoHTML/modulo02/desafio/imagens/sobre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
