@@ -1,0 +1,23 @@
+header {
+    height: 15vh;
+    background-image: url('/html/Bootcamp-FormacaoHTML/modulo02/desafio/imagens/atendimento.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+table{
+    border-spacing: 0;
+    text-align: center;
+    margin: auto;
+}
+
+table th, td{
+    border: solid black 1px;
+    padding: 5px;
+}
+
+th{
+    background-color: gray;
+    color: whitesmoke;
+}
