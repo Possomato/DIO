@@ -42,7 +42,7 @@ nav {
     border-right: solid 1px #cdcdcd;
 }
 
-nav > ul > li{
+nav > ul > li, aside > ul > li{
     margin: 10px 0px;
 }
 
