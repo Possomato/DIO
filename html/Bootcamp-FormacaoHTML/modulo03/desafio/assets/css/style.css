@@ -3,15 +3,19 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+ul { list-style: none;
+    padding-left: 5px;
+}
+a { color:blue;
+    text-decoration: none;
+}
 .bar {
     background-color: #f9f9fb;
     padding:15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
 }
-.content {
+section {
     max-width: 1440px;
     margin: auto;
     grid-gap: 3rem;
@@ -22,17 +26,27 @@ a { color:blue; text-decoration: none;}
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.footer {
-    min-height: 100px;
+footer {
     border-top: solid 1px #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
 }
-.anchors {
+aside {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
-.sidebar {
+nav {
     border-right: solid 1px #cdcdcd;
 }
-figure {
+
+nav > ul > li{
+    margin: 10px 0px;
+}
+
+.imagens{
+    width: 700px;
     text-align: center;
 }
