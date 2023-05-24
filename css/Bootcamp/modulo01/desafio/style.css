@@ -223,7 +223,7 @@ footer{
     justify-content: center;
 
     background: -webkit-linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(51, 169, 219) 0%);
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(51, 169, 219) 300%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(51, 169, 219) 400%);
 
     border-top: 1px solid #33A8DB;
 }
