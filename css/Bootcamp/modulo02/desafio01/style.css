@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+header{
+    background-color: white;
+    width: 100vw;
+    height: 8vh;
+
+    padding: 0px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    height: 24px;
+    width: 146px;
+    display: flex;
+    gap: 20px;
+}
+
+nav img{
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#pesquisa{
+    width: 404px;
+    height: 40px;
+    display: flex;
+}
+
+#caixaPesquisa{
+    background-color: white;
+    border: 1px solid #CCCCCC;
+
+    width: 348px;
+    height: 40px;
+
+}
+
+#botao{
+    width: 57px;
+    height: 40px;
+
+    background: #F8F8F8;
+    border: 1px solid #CCCCCC;
+
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+#botao img{
+    width: 20px;
+}
+
+#icones{
+    width: 130px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.icones img{
+    height: 30px;
+    width: 30px;
+
+    cursor: pointer;
+}
+
+#sino{
+    width: 26px;
+    height: 26px;
+}
+
+article{
+    width: 100vw;
+    height: 92vh;
+
+    display: flex;
+}
+
+section{
+    background-color: #F9F9F9;
+    width: 70vw;
+    height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video{
+    height: 537px;
+    width: 952px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+#aVideo h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+    margin: 16px 0px;
+}
+
+#acoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#canal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#canal img{
+    width: 42px;
+    height: 42px;
+
+    cursor: pointer;
+}
+
+#inscritos p, #inscritos h2{
+    font-size: 14px;
+}
+
+#botaoInscrever{
+    width: 159px;
+    height: 40px;
+
+    background-color: #CC0000;
+    color: white;
+
+    border: 0;
+
+    cursor: pointer;
+}
+
+#botaoInscrever span{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#botaoAcao{
+    width: auto;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+#botaoAcao img{
+    width: 20px;
+    height: 20px;
+}
+
+aside{
+    background-color: chartreuse;
+    width: 30vw;
+    height: 92vh;
+}
