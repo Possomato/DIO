@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 
 *{
@@ -6,9 +7,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
-
+html{
+    background-color: #F9F9F9;
+}
 
 header{
     background-color: white;
@@ -86,8 +90,8 @@ nav img{
 }
 
 #sino{
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
 }
 
 article{
@@ -98,13 +102,13 @@ article{
 }
 
 section{
-    background-color: #F9F9F9;
     width: 70vw;
     height: 92vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #video{
@@ -114,8 +118,17 @@ section{
     background-color: black;
 }
 
+#aVideo{
+    width: 952px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 70px;
+}
+
 #aVideo h2{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 23px;
 
@@ -142,7 +155,7 @@ section{
     cursor: pointer;
 }
 
-#inscritos p, #inscritos h2{
+#inscritos p, #inscritos h3{
     font-size: 14px;
 }
 
@@ -172,7 +185,7 @@ section{
 
     gap: 10px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 
     cursor: pointer;
 }
@@ -182,8 +195,67 @@ section{
     height: 20px;
 }
 
+#views{
+    margin: 16px 0px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#descricao{
+    width: 515px;
+    height: 64px;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #515151;
+}
+
 aside{
-    background-color: chartreuse;
-    width: 30vw;
+    width: 27vw;
     height: 92vh;
+
+    margin-top: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#videoIndicado{
+    display: flex;
+    gap: 16px;
+}
+
+#thumb{
+    width: 160px;
+    height: 90px;
+
+    object-fit: cover;
+}
+
+#descricaoVideoIndicado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 196px;
+    height: 89px;
+}
+
+#descricaoVideoIndicado h3{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#descricaoVideoIndicado h4{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #515151;
 }
