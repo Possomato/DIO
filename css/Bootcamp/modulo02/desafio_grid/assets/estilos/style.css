@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+header{
+    background-color: white;
+
+    width: 100vw;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 146px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+#logo svg{
+    width: 24px;
+    margin-right: 24px;
+}
+
+#logo img{
+    width: 90px;
+    height: 20px;
+}
+
+#boxPesquisa{
+    width: 404px;
+    height: 40px;
+
+    display: grid;
+    grid-template-columns: 348px 1fr;
+}
+
+#boxPerfil{
+    width: 130px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 25px;
+}
+
+#boxPerfil img{
+    width: 28px;
+}
+
+article{
+    height: 100vh;
+    width: 100vw;
+
+
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 218px 1fr;
+}
+
+nav{
+    background-color: blueviolet;
+}
+
+section{
+    background-color: chocolate;
+}
