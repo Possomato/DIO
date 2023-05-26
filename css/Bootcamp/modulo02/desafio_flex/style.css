@@ -225,7 +225,7 @@ aside{
     gap: 16px;
 }
 
-#videoIndicado{
+.videoIndicado{
     display: flex;
     gap: 16px;
 }

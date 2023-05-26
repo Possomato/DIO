@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
 
 header{
     background-color: white;
@@ -9,6 +17,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 #logo{
@@ -36,6 +48,20 @@ header{
 
     display: grid;
     grid-template-columns: 348px 1fr;
+
+    border-radius: 0;
+}
+
+#pesquisa{
+    border: 1px solid #CCCCCC;
+}
+
+#boxPesquisa button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
 }
 
 #boxPerfil{
@@ -56,16 +82,91 @@ article{
     height: 100vh;
     width: 100vw;
 
-
-    background-color: aqua;
     display: grid;
     grid-template-columns: 218px 1fr;
 }
 
 nav{
-    background-color: blueviolet;
+    margin: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.menuItem{
+    height: 24px;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    cursor: pointer;
+}
+
+.menuItem h2{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#menuItemNegrito{
+    font-weight: 700;
 }
 
 section{
-    background-color: chocolate;
+    background-color: #F9F9F9;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+
+    width: 250px;
+    height: 262px;
+
+    cursor: pointer;
+}
+
+.video img{
+    width: 250px;
+}
+
+.descricaoGeral{
+    display: flex;
+    gap: 10px;
+
+    width: 250px;
+}
+
+.descricaoGeral img{
+    width: 42px;
+    height: 42px;
+}
+
+.descricao{
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descricao h3{
+    font-size: 17px;
+}
+
+.descricao p{
+    font-size: 14px;
+    width: 150px;
 }
