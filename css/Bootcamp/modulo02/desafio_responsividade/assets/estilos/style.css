@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+    min-height: 459px;
+    max-height: 506px;
+    width: 100vw;
+    background-image: url("/assets/imagens/Header\ Background.png");
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 70px 24px;
+}
+
+header h1{
+    width: 278px;
+    height: 64px;
+
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+
+    margin: 0px 0px 24px;
+    color: #FFFFFF;
+}
+
+header p{
+    text-align: justify;
+    word-wrap: break-word;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px 0px 24px;
+
+    color: #FFFFFF;
+}
+
+button{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: auto;
+    padding: 10px 0px;
+    border-radius: 50px;
+    border: none;
+}
+
+#baixar{
+    color: #23272A;
+    margin: 0px 0px 16px;
+}
+
+#abra{
+    background-color: #23272A;
+    color: white;
+}
+
+section{
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+section h2{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #23272A;
+}
+
+section p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #23272A;
+}
+
+.sectionGrey{
+    background: #F6F6F6;
+}
+
+section h1{
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+
+    color: #23272A;
+}
+
+footer{
+    width: 429px;
+    height: 140px;
+    left: 0px;
+    top: 2652px;
+
+    background: #23272A;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
