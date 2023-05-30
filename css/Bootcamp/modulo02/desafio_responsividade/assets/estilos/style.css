@@ -176,6 +176,10 @@ footer{
         text-align: center;   
     }
 
+    #heaederContent p{
+        text-align: center;
+    }
+
     #botoes{
         flex-direction: row;
     }
