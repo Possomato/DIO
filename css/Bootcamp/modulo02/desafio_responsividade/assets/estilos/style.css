@@ -25,6 +25,8 @@ header{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     padding: 70px 24px;
 }
@@ -55,25 +57,32 @@ header p{
     color: #FFFFFF;
 }
 
+#heaederContent{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
 button{
     font-weight: 400;
-    font-size: 1rem;
     line-height: 22px;
+    padding: 15px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 
     width: auto;
-    padding: 10px 0px;
+
     border-radius: 50px;
     border: none;
+
+    width: 100%;
+    max-width: 500px;
 }
 
 #baixar{
     color: #23272A;
-    margin: 0px 0px 16px;
 }
 
 #abra{
@@ -81,11 +90,26 @@ button{
     color: white;
 }
 
+#botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+}
+
+article{
+    width: 100vw;
+}
+
 section{
     padding: 40px 24px;
     display: flex;
     flex-direction: column;
     gap: 27px;
+    justify-content: center;
 }
 
 section h2{
@@ -118,8 +142,14 @@ section h1{
     color: #23272A;
 }
 
+section img{
+    align-items: center;
+
+    object-fit: contain;
+}
+
 footer{
-    width: 429px;
+    width: 100vw;
     height: 140px;
     left: 0px;
     top: 2652px;
@@ -129,4 +159,84 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 720px) {
+    #heaederContent{
+        align-items: center;
+    }
+
+    #heaederContent h1{
+        width: 313px;
+        height: 112px;
+        
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        text-align: center;   
+    }
+
+    #botoes{
+        flex-direction: row;
+    }
+
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+
+    section {
+      flex-direction: row;
+      padding: 40px 150px;
+      margin: 0px;
+    }
+
+    section img{
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #coluna{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #coluna img{
+        width: 100%;
+        max-width: 700px;
+    }
+
+    #coluna .descricao{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #coluna h1{
+        width: 608px;
+        height: 80px;
+
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #coluna p{
+        width: 100%;
+        max-width: 802px;
+    }
+
+    .descricao{
+        width: 348px;
+    }
+
+    .descricao h2{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 54px;
+
+        min-width: 348px;
+    }
 }
