@@ -1,4 +1,7 @@
-
+:root{
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #146c43;
+}
 
 .btn{
     --bs-btn-bg: #198754;
@@ -10,6 +13,10 @@
 
 .navbar-brand img{
     width: 100px;
+}
+
+section{
+    scroll-margin-top: 6rem;
 }
 
 /* tamanho do carrosel */
@@ -30,4 +37,13 @@
     height: 100%;
     background: linear-gradient(transparent, rgb(31,31,31));
     position: absolute;
+}
+
+.card img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.modal-body iframe{
+    width: 100%;
 }
