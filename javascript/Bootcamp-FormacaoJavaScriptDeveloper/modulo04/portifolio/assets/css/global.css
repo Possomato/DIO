@@ -11,7 +11,7 @@ body{
 
   color: white;
 
-  background: linear-gradient(135deg, #7404BF, black 30%, black 70%, #AB05F2);
+  background: linear-gradient(145deg, #AB05F2, #7404BF, black 30%, black 70%,#7404BF, #AB05F2);
 }
 
 
@@ -20,4 +20,11 @@ main{
   padding: 1em;
   border: 1px solid white;
   border-radius: 1em;
+}
+
+@media only screen and (min-width: 768px){
+  main{
+    max-width: 1024px;
+    margin: 1rem auto;
+  }
 }

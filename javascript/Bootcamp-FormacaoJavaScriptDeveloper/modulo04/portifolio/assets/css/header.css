@@ -40,17 +40,41 @@ header > h1{
 }
 
 #job{
-  background-image: url('/assets/img/icons/job.svg');
+  background-image: url('/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/job.svg');
 }
 
 #local{
-  background-image: url('/assets/img/icons/local.svg');
+  background-image: url('/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/local.svg');
 }
 
 #phone{
-  background-image: url('/assets/img/icons/phone.svg');
+  background-image: url('/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/phone.svg');
 }
 
 #mail{
-  background-image: url('/assets/img/icons/mail.svg');
+  background-image: url('/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/mail.svg');
+}
+
+@media only screen and (min-width: 768px){
+  header{
+    display: grid;
+    grid-template-areas:
+    "photo title"
+    "photo information"
+    ;
+  }
+
+  header img{
+    grid-area: photo;
+    margin: 0 auto;
+  }
+
+  header h1{
+    grid-area: title;
+    text-align: start;
+  }
+
+  header #information{
+    grid-area: information;
+  }
 }
