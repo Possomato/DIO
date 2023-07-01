@@ -1,0 +1,33 @@
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.bars{
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bars2{
+  background-image: url(/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/bars2.svg);
+}
+
+.bars3{
+  background-image: url(/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/bars3.svg);
+}
+
+.bars4{
+  background-image: url(/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/bars4.svg);
+}
