@@ -1,12 +1,23 @@
-const botao = document.querySelector('.acordeon')
+const botaoIdioma = document.querySelector('.botaoIdioma')
+const botaoProjeto = document.querySelector('.botaoProjeto')
 let aberto = false
 
-botao.addEventListener('click', function(){
+botaoIdioma.addEventListener('click', function(){
   if (aberto){
-    botao.classList.remove('open')
+    botaoIdioma.classList.remove('open')
     aberto = false
   } else{
-    botao.classList.add('open')
+    botaoIdioma.classList.add('open')
+    aberto = true
+  }
+})
+
+botaoProjeto.addEventListener('click', function(){
+  if (aberto){
+    botaoProjeto.classList.remove('open')
+    aberto = false
+  } else{
+    botaoProjeto.classList.add('open')
     aberto = true
   }
 })

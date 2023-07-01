@@ -1,13 +1,13 @@
-ul{
+#listaIdiomas{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-li{
+.idioma{
   display: flex;
   align-items: center;
   gap: .3rem;
