@@ -1,6 +1,20 @@
 const botaoIdioma = document.querySelector('.botaoIdioma')
 const botaoProjeto = document.querySelector('.botaoProjeto')
+const botaoSkill = document.querySelector('.botaoSkill')
+const botaoExperiencia = document.querySelector('.botaoExperiencia')
+
 let aberto = false
+
+botaoSkill.addEventListener('click', function(){
+  if (aberto){
+    botaoSkill.classList.remove('open')
+    aberto = false
+  } else{
+    botaoSkill.classList.add('open')
+    aberto = true
+  }
+})
+
 
 botaoIdioma.addEventListener('click', function(){
   if (aberto){
@@ -18,6 +32,16 @@ botaoProjeto.addEventListener('click', function(){
     aberto = false
   } else{
     botaoProjeto.classList.add('open')
+    aberto = true
+  }
+})
+
+botaoExperiencia.addEventListener('click', function(){
+  if (aberto){
+    botaoExperiencia.classList.remove('open')
+    aberto = false
+  } else{
+    botaoExperiencia.classList.add('open')
     aberto = true
   }
 })
