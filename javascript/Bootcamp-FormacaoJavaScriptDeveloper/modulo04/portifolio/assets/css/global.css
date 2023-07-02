@@ -32,6 +32,11 @@ a:hover{
   text-decoration: underline;
 }
 
+ul{
+  list-style-type: none;
+}
+
+
 @media only screen and (min-width: 768px){
   main{
     max-width: 1024px;

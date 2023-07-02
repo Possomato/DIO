@@ -1,41 +1,73 @@
-#skills{
-  width: 100%;
+#habilidades{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
-#habilidadesPro{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#habilidadesPro, #habilidadesPes{
+  display: flex;
+  flex-direction: column;
   
 }
 
 #habilidadesPes{
-  width: 100%;  
+  width: 45%;
 }
 
-.techs{
-  width: 4rem;
-  height: 4rem;
-  background-repeat: no-repeat;
-  background-size: auto;
+#habilidadesPro > ul{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#js{
-  background: url(/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/js.svg);
+#habilidadesPro > ul > li{
+  padding: .5rem .5rem;
 }
 
-#node{
-  background: url(/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/node.svg);
+#habilidadesPro > ul > li > img{
+  max-width: 50px;
 }
 
-#html{
-  background: url(/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/html.svg);
+#habilidadesPes > ul{
+
+  list-style-type: disc;
 }
 
-#css{
-  background: url(/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/css.svg);
+
+#habilidadesPes > ul > li{
+  padding: .5rem;
+}
+
+@media only screen and (max-width: 768px){
+  #habilidades{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  #habilidadesPes{
+    width: 100%;
+  }
+
+  #habilidadesPro > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #habilidadesPro > ul > li{
+    padding: .5rem .5rem;
+  }
+  
+  #habilidadesPro > ul > li > img{
+    max-width: 50px;
+  }
 }
