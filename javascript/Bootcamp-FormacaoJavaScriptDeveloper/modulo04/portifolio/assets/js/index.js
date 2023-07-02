@@ -2,6 +2,7 @@ const botaoIdioma = document.querySelector('.botaoIdioma')
 const botaoProjeto = document.querySelector('.botaoProjeto')
 const botaoSkill = document.querySelector('.botaoSkill')
 const botaoExperiencia = document.querySelector('.botaoExperiencia')
+const botaoEducacao = document.querySelector('.botaoEducacao')
 
 let aberto = false
 
@@ -42,6 +43,16 @@ botaoExperiencia.addEventListener('click', function(){
     aberto = false
   } else{
     botaoExperiencia.classList.add('open')
+    aberto = true
+  }
+})
+
+botaoEducacao.addEventListener('click', function(){
+  if (aberto){
+    botaoEducacao.classList.remove('open')
+    aberto = false
+  } else{
+    botaoEducacao.classList.add('open')
     aberto = true
   }
 })
