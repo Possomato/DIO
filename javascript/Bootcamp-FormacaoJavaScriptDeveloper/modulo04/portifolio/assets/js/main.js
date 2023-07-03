@@ -1,6 +1,3 @@
-
-
-
 function updateProfileIndo(profileData){
   const photo = document.getElementById('profile.photo')
   photo.src = profileData.photo
@@ -22,11 +19,15 @@ function updateProfileIndo(profileData){
   const mail = document.getElementById('profile.mail')
   mail.innerText = profileData.mail
   mail.href = `mailto:${profileData.mail}`
+}
 
-  
+function updateSoftSkills(profileData){
+  const softSkills = document.getElementById('profile.skills.softSkills')
+  softSkills.innerHTML = profileData.skills.softSkill.map(skill => `<li>${skill}</li>`).join('')
 }
 
 (async () => {
   const profileData = await fetchProfileData()
   updateProfileIndo(profileData)
+  updateSoftSkills(profileData)
 })()
