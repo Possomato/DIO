@@ -7,7 +7,7 @@
   background-image: url('/javascript/Bootcamp-FormacaoJavaScriptDeveloper/modulo04/portifolio/assets/img/icons/github.svg');
 }
 
-#listaProjetos{
+.listaProjetos{
   display: flex;
   flex-direction: column;
 
