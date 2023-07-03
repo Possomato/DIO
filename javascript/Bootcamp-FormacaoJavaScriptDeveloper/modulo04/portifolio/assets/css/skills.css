@@ -6,12 +6,12 @@
   padding: 1rem 2rem;
 }
 
-#habilidadesPro, #habilidadesPes{
+#habilidadesPro, .habilidadesPes{
   display: flex;
   flex-direction: column;
 }
 
-#habilidadesPes{
+.habilidadesPes{
   width: 45%;
 }
 
@@ -40,12 +40,12 @@
   max-width: 50px;
 }
 
-#habilidadesPes > ul{
+.habilidadesPes ul{
   list-style-type: disc;
   padding: 0 1rem;
 }
 
-#habilidadesPes > ul > li{
+.habilidadesPes li{
   padding: .5rem;
 }
 
@@ -64,7 +64,7 @@
     width: 100%;
   }
 
-  #habilidadesPro, #habilidadesPes{
+  #habilidadesPro, .habilidadesPes{
     width: auto;
   }
 
