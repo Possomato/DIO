@@ -17,7 +17,7 @@ function updateProfileIndo(profileData){
 
   const phone = document.getElementById('profile.phone')
   phone.innerText = profileData.phone
-  phone.href = `https://api.whatsapp.com/send?phone=${profileData.phone}`
+  phone.href = `https://api.whatsapp.com/send?phone=${profileData.phoneZap}`
 
   const mail = document.getElementById('profile.mail')
   mail.innerText = profileData.mail
