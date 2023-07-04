@@ -31,21 +31,34 @@ function updateHardSkills(profileData){
   hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
 }
 
-function updatePortifolio(profileData){
-  const portifolio = document.getElementById('profile.portifolio')
-  portifolio.innerHTML = profileData.portifolio.map(project => {
+function updatePortfolio(profileData){
+  const portfolio = document.getElementById('profile.portfolio')
+  portfolio.innerHTML = profileData.portfolio.map(project => {
     return`
     <li class="projeto" >
     <span class="title">
-      <span class="${project.github ? 'class=github' : ''}"></span>
+    <span class="${project.github ? 'github' : ''}"></span>
       ${project.name}
     </span>
-    <a href="${portifolio.url}" target="_blank" class="linkProjeto">
-    ${portifolio.url}
+    <a href="${project.url}" target="_blank" class="linkProjeto">
+    ${project.url}
     </a>
   </li>
     `
   }).join('')
+}
+
+function updateProfessionalExperience(profileData){
+  const professionalExperience = document.getElementById('profile.professionalExperience')
+  professionalExperience.innerHTML = profileData.professionalExperience.map(experience =>{
+    return`
+    <li>
+    <h3>${experience.name}</h3>
+    <span class="tempoExperiencia"><span class="date"></span>${experience.period}</span>
+    <p class="descricaoExperiencia">${experience.description}</p>
+    </li>
+    `
+  })
 }
 
 (async () => {
@@ -53,5 +66,6 @@ function updatePortifolio(profileData){
   updateProfileIndo(profileData)
   updateSoftSkills(profileData)
   updateHardSkills(profileData)
-  updatePortifolio(profileData)
+  updatePortfolio(profileData)
+  updateProfessionalExperience(profileData)
 })()
