@@ -58,7 +58,7 @@ function updateProfessionalExperience(profileData){
     <p class="descricaoExperiencia">${experience.description}</p>
     </li>
     `
-  })
+  }).join('')
 }
 
 (async () => {
